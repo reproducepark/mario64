@@ -1,0 +1,9 @@
+services:
+  nginx:
+    container_name: my-mario
+    build: 
+      context: .
+    restart: always
+    ports:
+      - '80:80'
+      - '443:443'
